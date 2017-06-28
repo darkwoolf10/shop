@@ -22,9 +22,8 @@
 @include('layouts.headerNavigation')
 
 <div class="jumbotron">
-    <div class="container">
-        <h1>Hello world!</h1>
-        <p>That our new blog</p>
+    <div class="container index-bar">
+        <h1>This my shop</h1>
     </div>
 </div>
 <div class="container">
