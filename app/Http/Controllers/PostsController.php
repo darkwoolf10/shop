@@ -14,7 +14,7 @@ class PostsController extends Controller
     }
 
     public function show(Post $post) {
-//        $post = DB::table('posts')->find($id);
+//      $post = DB::table('posts')->find($id);
         return view('posts.show', compact('post'));
     }
 
