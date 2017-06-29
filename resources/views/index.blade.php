@@ -10,5 +10,6 @@
             </div>
         @endforeach
     </div>
+    {{$posts = DB::table('posts')->paginate(12)}}
 
 @endsection
