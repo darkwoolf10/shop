@@ -21,4 +21,11 @@ Auth::routes();
 
 Route::post('/post', "PostsController@store");
 
+Route::get('/posts/{post}/edit', "PostsController@edit");
+
+Route::patch('/posts/{post}', "PostsController@update");
+
+Route::delete('posts/{post}', "PostsController@destroy");
+
 Route::get('/home', 'HomeController@index')->name('home');
+

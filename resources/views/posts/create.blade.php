@@ -1,6 +1,8 @@
-@extends('layouts.layout')
+@extends('layouts.app')
 
 @section('content')
+    @include('layouts.error')
+    <div class="container">
     <h2>Public a post:</h2>
     <form action="/post" method="post">
         {{csrf_field()}}
@@ -24,4 +26,5 @@
             <button class="btn btn-primary" type="submit">Publish</button>
         </div>
     </form>
+    </div>
 @endsection
